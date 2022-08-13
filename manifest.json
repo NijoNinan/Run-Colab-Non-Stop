@@ -1,0 +1,17 @@
+{
+    "manifest_version": 3,
+
+    "name": "Run Colab Non-Stop",
+    "description": "Keeps the Colab running for a very long time and also initiates 'Run all' if the sesion is stopped",
+    "version": "1.0",
+    "icons": {
+        "128": "icon.jpg"
+    },
+
+    "content_scripts": [
+        {
+            "matches" : ["https://colab.research.google.com/drive/1mpiXrVtgjVL42qHlSTSL4Zw1GBqZDeyY"],
+            "js" : ["functions.js"]
+        }
+    ]
+}
